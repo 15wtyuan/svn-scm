@@ -295,6 +295,11 @@ export class Repository implements IRemoteRepository {
 
   @debounce(1000)
   private async onDidAnyFileChanged(e: Uri) {
+    const autorefresh = configuration.get<boolean>("autorefresh");
+
+    if (!autorefresh) {
+      return;
+    }
     await this.repository.updateInfo();
     this._onDidChangeRepository.fire(e);
   }
