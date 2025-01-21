@@ -10,6 +10,9 @@
 
 [![Known Vulnerabilities](https://snyk.io/test/github/JohnstonCode/svn-scm/badge.svg)](https://snyk.io/test/github/JohnstonCode/svn-scm)
 
+# Fork
+> 修复了在大型项目里面很卡的问题,只需要在设置中把`autorefresh`关闭!
+
 # Prerequisites
 
 > **Note**: This extension leverages your machine's SVN installation,\
