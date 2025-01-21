@@ -109,7 +109,7 @@ jobs:
         run: npx vsce package -o svn-scm.vsix
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: "svn-scm-${{ github.sha }}.vsix"
           path: "svn-scm.vsix"
@@ -120,7 +120,7 @@ jobs:
           npx vsce package -o svn-scm-ovsx.vsix
 
       - name: Upload open-vsx artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: "svn-scm-ovsx-${{ github.sha }}.vsix"
           path: "svn-scm-ovsx.vsix"
