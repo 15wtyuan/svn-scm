@@ -18,6 +18,11 @@ jobs:
     - name: Fetch tags
       run: git fetch --tags -f || true
 
+    - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.17'
+
     - name: Install dependencies
       run: yarn install --frozen-lockfile || yarn install --frozen-lockfile
 
